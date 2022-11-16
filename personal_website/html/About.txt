@@ -1,0 +1,55 @@
+<DOCTYPE html!>
+<html>
+<head>
+<title>About Me</title>
+</head>
+<body>
+
+<h3>Schooling:</h3>
+<h4>Primary Education: Zion Matriculation Higher Secondary School</h4>
+<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+<h4>Junior Education: Alwin Memorial Public School</h4>
+<h4>Senior Education: Alwin Memorial Public School</h4>
+<h4>Super-Senior Education: Alwin Memorial Public School</h4>
+<h3>Interests:</h3>
+<ul>
+<li>Individual Sports activties:<ol>
+<li>Competitive Swimming</li>
+<li>Athletics</li>
+<li>Long Distance Running</li>
+<li>Long Distance Cycling</li>
+<li>Shotput, Discuss throw</li>
+<li>Karate-Kumite</li>
+<li>Gymming</li>
+<li>Weights</li>
+</ol>
+</li>
+<li>Team Sports activties:<ol>
+<li>Aerobics</li>
+<li>Crosfits</li>
+<li>Kho-Kho</li>
+<li>Throwball</li>
+<li>Frisbee</li>
+<li>Kabadi</li>
+<li>Karate-Kata</li>
+</ol>
+</li>
+<li>Instruments:<ol>
+<li>Guitar-Level 1</li>
+<li>Keyboard-Level 1</li>
+</ol>
+</li>
+<li>Instruments:</li>
+<li></li>
+<li></li>
+<li></li>
+
+<h3>Achievements/Certifications:</h3>
+
+<h3>Experience:</h3>
+
+<h3>Projects:</h3>
+
+<h3>Background:</h3>
+
+<h3>Contacts:</h3>
