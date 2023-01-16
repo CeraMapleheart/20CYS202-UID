@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+.container{
+	background-image: url('../images/Backgroud.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+	padding-left: 4%;
+	padding-bottom: 5%;
+}
+
+.navbar
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 8px;
+	padding-right:12px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+	text-transform: uppercase;
+    text-align: centre;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: navy;
+}
+.logo{
+	width: 250px;
+	cursor: pointer;
+}
+.logo{
+	width: 200px;
+	padding-left: 0%;
+	padding-right: 20%;
+	margin-top: 25px;
+	margin-right:30px;
+}
+.university{
+	width: 220px;
+	cursor: pointer;
+}
+.university{
+	width: 200px;
+	padding-left: 25%;
+	
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+h1 {
+  font-size: 44px;
+  font-family: Raleway;
+  color:#fff;
+  text-transform: uppercase;
+  width: 60%;
+  text-align: centre;
+  margin-left: 200px;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 30%;
+  float: center;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+div.terms{
+    display:block;
+    position:absolute;
+	align: center;
+	font-family: buhari;
+    width: 100%;
+    background: beige;
+    border:1px solid #ddd;
+	margin-bottom: 2px;
+	padding-left: 480px;
+}

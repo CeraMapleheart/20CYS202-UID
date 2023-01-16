@@ -1,0 +1,149 @@
+ .container{
+	background-image: url('../images/Backgroud.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+	padding-left: 4%;
+	padding-bottom: 5%;
+}
+.navbar
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 8px;
+	padding-right:12px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+	text-transform: uppercase;
+    text-align: centre;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: navy;
+}
+.logo{
+	width: 250px;
+	cursor: pointer;
+}
+.logo{
+	width: 200px;
+	padding-left: 5%;
+	padding-right: 20%;
+	margin-top: 25px;
+	margin-right:30px;
+}
+.university{
+	width: 220px;
+	cursor: pointer;
+}
+.university{
+	width: 250px;
+	padding-left: 25%;
+	
+	margin-top: 30px;
+	margin-right: 30px;
+}
+div.terms{
+    display:block;
+    position:absolute;
+	align: center;
+	font-family: buhari;
+    width: 100%;
+    background: beige;
+    border:1px solid #ddd;
+	margin-bottom: 2px;
+	padding-left: 480px;
+}
+ *,
+ *:before,
+ *:after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ .form-header {
+     font-size: 18px;
+     border-bottom: 1px solid #fff;
+     padding: 10px 0;
+ }
+
+ body {
+
+     font-size: 15px;
+ }
+
+ .wrapper {
+     padding: 10px 25px;
+     width: 710px;
+     border: 1px solid #666;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+ }
+
+form {
+margin: 30px 0;
+}
+
+ .form-label {
+     float: left;
+     width: 150px;
+ }
+
+ .form-row {
+     margin: 12px 100px;
+ }
+
+ .form-field {}
+
+ input,
+ textarea,
+ select {
+     width: 500px;
+     height: 28px;
+     border: 1px solid #d2d6de;
+     padding: 2px 8px;
+ }
+
+ textarea {
+     height: 50px;
+ }
+
+ input[type=radio],
+ input[type=checkbox] {
+     width: 20px;
+     color: red;
+     height: 14px;
+ }
+
+ input[type=submit],
+ input[type=reset] {
+     width: 100px;
+     margin-right: 50px;
+	background-color: #04AA6D;
+	border-color: #04AA6D;
+	color: #ffffff;
+	cursor: pointer;
+ }
+input[type=submit]:hover,
+ input[type=reset]:hover {
+    background-color: green;
+ }
+
+
+ .form-field:after {
+     content: '';
+     display: block;
+     clear: both;
+ }
+ 
