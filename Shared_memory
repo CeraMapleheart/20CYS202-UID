@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<sys/shm.h>
+#include<sys/ipc.h>
+
+
+int main(){
+
+void* sm;
+char buff[100];
+int shmid;
+
+shmid=shmget((key_t)1122,1024,0666|IPC_CREAT);
+printf("Key of share memory is %d\n",shmid);
+
+sm=shmat(shmid,NULL,0);
+printf("Process attached at %p\n",sm);
+printf("Enter some data to write to shared memory\n");
+
+read(0,buff,100);
+strcpy(sm,buff);
+printf("You wrote:%s/n",(char*) sm);
+}
