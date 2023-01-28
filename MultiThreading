@@ -2,7 +2,16 @@
 #include<stdlib.h>
 #include<unistd.h>
 #include<pthread.h>
-void *thread_function(void *arg);
+void *thread_function(void *arg)
+{
+// the work to be done by the thread is defined in this function
+printf("Inside Thread\n");
+for(i=0;i<5;i++)
+{
+printf("%d\n",i);
+sleep(1);
+}
+}
 int i,j;
 int main()
 {
@@ -17,15 +26,6 @@ printf("Inside Main Program\n");
 for(j=20;j<25;j++)
 {
 void *thread_function(void *arg) 
-{
-// the work to be done by the thread is defined in this function
-printf("Inside Thread\n");
-for(i=0;i<5;i++)
-{
-printf("%d\n",i);
-sleep(1);
-}
-}
 printf("%d\n",j);
 sleep(1);
 }
