@@ -43,18 +43,18 @@
             <input id="University_name" type="text"   name="University_name" required/></br>
 			
 				    
-            <label for="University_n"><b style="color:beige">University Branch</b><span>*</span></label>
-            <input id="University_n" type="text"   name="University_n" required/></br>
+            <label for="University_n"><b style="color:beige">Phone No.</b><span>*</span></label>
+            <input id="University_n" type="text"   name="University_n" onchange="validatePhoneno()" required/></br>
 	  
 	  <label for="birthday"><b style="color:beige">Arrival Date</b></label>
       <input type="date" id="birthday" name="birthday"></br></br></br>
 	  
 	  
       <label for="email"><b style="color:beige">Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required></br>
+      <input type="text" placeholder="Enter Email" name="email" onchange="validateEmail()" required ></br>
 
       <label for="psw"><b style="color:beige">Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required></br>
+      <input type="password" placeholder="Enter Password" name="psw" onchange="validatePassword()" required></br>
 
       <label for="psw-repeat"><b style="color:beige">Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required></br>
@@ -87,14 +87,14 @@
            </label></br></br>
 	
       <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" style="color:beige"> I agree to
+        <input type="checkbox" checked="checked" name="remember"  style="margin-bottom:15px"><b style="color:#ffffff"> I agree to</b>
       </label>
 	  
-      <a href="#" style="color:dodgerblue">University Terms & Conditions</a>
+      <a href="#" style="color:beige">University Terms & Conditions</a>
 
       <div class="clearfix">
         
-        <button type="button" class="signup" onclick=NameCheck()>Sign Up</button>
+        <button type="button" class="signup">Sign Up</button>
 		 <button type="submit" onclick=document.location="../html/payment_page.html">PROCEED TO PAY</button>
       </div>
     </div>
@@ -105,9 +105,41 @@
 
 <footer>
 <div id="term" class="terms">
-  <p>Author: Roshni Venkatesan<br>
-   &#xA9; All Rights Reserved 2022-2023<br>
-  <a href="mailto:hege@example.com">roshnivenkatesan04.com</a></p>
+  <p>
+   Copyright &#xA9; 2022-2023. Anokha - <a href="roshnivenkatesan04.com">Roshni</a><br>
+   II year B.Tech CSE(CYS)</br>
+   Part of 20CYS202 - User Interface Design</br>
+   Amrita Vishwa Vidyapeetham, Coimbatore
+  </p>
   </div>
 </footer>
 </html>
+
+<script>
+function validatePhoneno() {
+      let phone = document.getElementById("phone").value;
+      if(!(phone.length==10))
+{
+window.alert("Enter valid phoneno");
+document.getElementById("phone").focus()
+}
+}
+function validatePassword() {
+	let pwd = document.getElementById("psw").value;
+                 var pass= "^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+if(!pwd.match(pass))
+{
+window.alert("Enter strong password");
+document.getElementById("psw").focus()
+}
+}
+
+function validateEmail() {
+     var maill= /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+    var mail = document.getElementById("email").value;
+    if (!mail.match(maill)) {
+        alert("Please enter a valid email address");
+        document.getElementById("email").focus()
+    }
+}
+</script>

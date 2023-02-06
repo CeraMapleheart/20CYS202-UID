@@ -27,7 +27,7 @@
 		</div>
 
 
-<h1 style="color:red"><center><i><b>ANOKHA 2K23-DARE TO BE DIFFERENT</b></i></center></h1><br/><br/><br/>
+<!--<h1 style="color:red"><center><i><b>ANOKHA 2K23-DARE TO BE DIFFERENT</b></i></center></h1><br/><br/><br/>-->
 
  
   <form class="modal-content" action="/action_page.php">
@@ -37,13 +37,13 @@
       <hr>
   
       <label for="email"><b style="color:beige">Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required></br>
+      <input type="text" placeholder="Enter Email" name="email" onchange="validateEmail()" required></br>
 
       <label for="psw"><b style="color:beige">Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" onchange="validatePassword()" required></br>
 
     
-        <button type="submit" class="signup" onclick=NameCheck()>Log In</button>
+        <button type="submit" class="signup">Log In</button></br>
 		
       </div>
     </div>
@@ -53,10 +53,34 @@
 
 <footer>
 <div id="terms" class="terms">
-  <p>Author: Roshni Venkatesan<br>
-   &#xA9; All Rights Reserved 2022-2023<br>
-  <a href="mailto:hege@example.com">roshnivenkatesan04.com</a></p>
+   <p>
+   Copyright &#xA9; 2022-2023. Anokha - <a href="roshnivenkatesan04.com">Roshni</a><br>
+   II year B.Tech CSE(CYS)</br>
+   Part of 20CYS202 - User Interface Design</br>
+   Amrita Vishwa Vidyapeetham, Coimbatore
+  </p>
   </div>
 </footer>
 </body>
 </html>
+
+<script>
+function validatePassword() {
+	let pwd = document.getElementById("psw").value;
+                 var pass= "^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+if(!pwd.match(pass))
+{
+window.alert("Enter strong password");
+document.getElementById("psw").focus()
+}
+}
+
+function validateEmail() {
+     var maill= /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+    var mail = document.getElementById("email").value;
+    if (!mail.match(maill)) {
+        alert("Please enter a valid email address");
+        document.getElementById("email").focus()
+    }
+}
+</script>
